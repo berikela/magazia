@@ -4,8 +4,10 @@
       "Bash(npm start)",
       "Bash(npm install:*)",
       "Bash(git add:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(PORT=3001 npm start)"
     ],
+    "defaultMode": "acceptEdits",
     "additionalDirectories": [
       "C:\\c\\Users\\berik\\Desktop"
     ]
