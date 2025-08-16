@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm start)",
+      "Bash(npm install:*)"
+    ],
+    "additionalDirectories": [
+      "C:\\c\\Users\\berik\\Desktop"
+    ]
+  }
+}
