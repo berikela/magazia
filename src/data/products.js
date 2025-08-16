@@ -25,5 +25,53 @@ export const products = [
     price: 10,
     image: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg",
     description: "bio, healthy strawberry."
+  },
+  {id: 4,
+    name:"marwyvi",
+    price: 10,
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg",
+    description: "bio, healthy strawberry."
+  },
+  {id: 4,
+    name:"marwyvi",
+    price: 10,
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg",
+    description: "bio, healthy strawberry."
+  },
+  {id: 4,
+    name:"marwyvi",
+    price: 10,
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg",
+    description: "bio, healthy strawberry."
+  },
+  {id: 4,
+    name:"marwyvi",
+    price: 10,
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg",
+    description: "bio, healthy strawberry."
+  },
+  {id: 4,
+    name:"marwyvi",
+    price: 10,
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg",
+    description: "bio, healthy strawberry."
+  },
+  {id: 4,
+    name:"marwyvi",
+    price: 10,
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg",
+    description: "bio, healthy strawberry."
+  },
+  {id: 4,
+    name:"marwyvi",
+    price: 10,
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg",
+    description: "bio, healthy strawberry."
+  },
+  {id: 4,
+    name:"marwyvi",
+    price: 10,
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg",
+    description: "bio, healthy strawberry."
   }
 ];
