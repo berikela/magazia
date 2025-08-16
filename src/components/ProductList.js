@@ -1,8 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { products } from '../data/products';
 
 const ProductList = () => {
+  const [currentPage, setCurrentPage] = useState(0);
+  const productsPerPage = 3;
+  const totalPages = Math.ceil(products.length / productsPerPage);
+  
+  const startIndex = currentPage * productsPerPage;
+  const endIndex = startIndex + productsPerPage;
+  const currentProducts = products.slice(startIndex, endIndex);
+
+  const goToNextPage = () => {
+    setCurrentPage((prev) => (prev + 1) % totalPages);
+  };
+
+  const goToPrevPage = () => {
+    setCurrentPage((prev) => (prev - 1 + totalPages) % totalPages);
+  };
+
   return (
     <div className="product-list">
       <h1>Welcome to Marwyvi</h1>
@@ -12,18 +28,42 @@ const ProductList = () => {
         <p>Discover our curated collection of high-quality products</p>
       </div>
 
-      <div className="products-grid">
-        {products.map(product => (
-          <div key={product.id} className="product-card">
-            <Link to={`/product/${product.id}`} className="product-link">
-              <img src={product.image} alt={product.name} className="product-image" />
-              <div className="product-info">
-                <h3 className="product-name">{product.name}</h3>
-                <p className="product-price">${product.price}</p>
-              </div>
-            </Link>
-          </div>
-        ))}
+      <div className="products-container">
+        <button 
+          className="pagination-arrow prev-arrow side-arrow" 
+          onClick={goToPrevPage}
+          aria-label="Previous products"
+        >
+          &#8249;
+        </button>
+        
+        <div className="products-grid">
+          {currentProducts.map(product => (
+            <div key={product.id} className="product-card">
+              <Link to={`/product/${product.id}`} className="product-link">
+                <img src={product.image} alt={product.name} className="product-image" />
+                <div className="product-info">
+                  <h3 className="product-name">{product.name}</h3>
+                  <p className="product-price">${product.price}</p>
+                </div>
+              </Link>
+            </div>
+          ))}
+        </div>
+        
+        <button 
+          className="pagination-arrow next-arrow side-arrow" 
+          onClick={goToNextPage}
+          aria-label="Next products"
+        >
+          &#8250;
+        </button>
+      </div>
+      
+      <div className="page-indicator-container">
+        <span className="page-indicator">
+          {currentPage + 1} / {totalPages}
+        </span>
       </div>
 
       <div className="features-section">
