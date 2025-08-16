@@ -5,7 +5,7 @@ import { products } from '../data/products';
 const ProductList = () => {
   return (
     <div className="product-list">
-      <h1>Welcome to Magazia Store</h1>
+      <h1>Welcome to Marwyvi</h1>
       <div className="products-grid">
         {products.map(product => (
           <div key={product.id} className="product-card">

@@ -13,12 +13,12 @@ body {
 
 .App {
   min-height: 100vh;
-  padding: 20px;
 }
 
 .product-list {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .product-list h1 {
@@ -79,6 +79,7 @@ body {
 .product-detail {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .back-link {
